@@ -1,0 +1,24 @@
+name: Snake Animation
+on:
+  schedule:
+    - cron: "0 0 * * *" # 每天0点自动更新
+  workflow_dispatch: # 支持手动触发
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Snake SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: YanGLwel
+          outputs: .github/assets/snake.svg
+      - name: Push SVG
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .github/assets/snake.svg
+          git commit -m "Update snake animation" || echo "No changes"
+          git push
