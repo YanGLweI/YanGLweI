@@ -2,5 +2,5 @@
 ## 🎮 在线小游戏
 | 游戏 | 游玩入口 |
 |------|----------|
-| 🟨 2048数字合成 | [点击打开](https://YanGLwel.github.io/game-2048/) |
-| 💣 经典网页扫雷 | [点击打开](https://YanGLwel.github.io/minesweeper/) |
+| 🟨 2048数字合成 | [点击打开](https://YanGLweI.github.io/game-2048/) |
+| 💣 经典网页扫雷 | [点击打开](https://YanGLweI.github.io/minesweeper/) |
